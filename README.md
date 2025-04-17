@@ -577,7 +577,7 @@ The embedding of \<ANATOMY\> will be added to the embedding of token "rotator" a
 The tags in the embedding could be in source or target vocabulary. They can be recursive and all relative tags' embeddings will be added to the input. For example: \<TAG1\> Token1 \<TAG2\> Token2 \</TAG2\> \</TAG1\>. For "Token2", both TAG1's embeddings and TAG2's embeddings will be applied to its input embedding. However, for "Token1", only TAG1's embedding will be added to its input embedding.  
 
 # Build Your Layers  
-Benefit from automatic differentiation, tensor based compute graph and other features, you can easily build your customized layers by a few code. The only thing you need to implment is forward part, and the framework will automatically build the corresponding backward part for you, and make the network could run on multi-GPUs or CPUs.  
+Benefit from automatic differentiation, tensor based compute graph and other features, you can easily build your customized layers by a few code. The only thing you need to implement is forward part, and the framework will automatically build the corresponding backward part for you, and make the network could run on multi-GPUs or CPUs.  
 Here is an example about **scaled multi-heads attention** component which is the core part in **Transformer** model.  
 ```c#
         /// <summary>
