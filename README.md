@@ -304,7 +304,7 @@ Here is the configuration file for model training.
 }
 ```
 
-### Data format for SeqCliassificationConsole tool  
+### Data format for SeqClassificationConsole tool  
 It also uses two files for each pair of data and follows the same naming convention as Seq2SeqConsole tool in above. The source file includes tokens as input to the model, and the target file includes the corresponding tags that model will predict. Each line contains one record.  
 
 Here is an example:  
