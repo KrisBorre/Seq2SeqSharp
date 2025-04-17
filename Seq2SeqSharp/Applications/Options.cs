@@ -29,7 +29,7 @@ namespace Seq2SeqSharp.Applications
         [Range(1, 99999)]
         public int BatchSize = 1;
 
-        [Arg("The maxmium token size per batch", nameof(MaxTokenSizePerBatch))]
+        [Arg("The maximum token size per batch", nameof(MaxTokenSizePerBatch))]
         [Range(1, 999999)]
         public int MaxTokenSizePerBatch = 5000;
 
@@ -137,7 +137,7 @@ namespace Seq2SeqSharp.Applications
         [RegularExpression("CrossEntropy|NegativeLogLikelihood")]
         public LossEnums LossType = LossEnums.CrossEntropy;
 
-        [Arg("The maxmium epoch number during training. Default is 100", nameof(MaxEpochNum))]
+        [Arg("The maximum epoch number during training. Default is 100", nameof(MaxEpochNum))]
         [Range(1, 9999)]
         public int MaxEpochNum = 100;
 
@@ -249,7 +249,7 @@ namespace Seq2SeqSharp.Applications
         [Range(1, 99999)]
         public int UpdateFreq = 1;
 
-        [Arg("The maxmium token size per batch during validation", nameof(ValMaxTokenSizePerBatch))]
+        [Arg("The maximum token size per batch during validation", nameof(ValMaxTokenSizePerBatch))]
         [Range(1, 99999)]
         public int ValMaxTokenSizePerBatch = 5000;
 

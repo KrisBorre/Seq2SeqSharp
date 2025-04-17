@@ -41,19 +41,19 @@ namespace Seq2SeqSharp.Applications
         [Arg("It indicates if the tgt embedding is trainable", nameof(IsTgtEmbeddingTrainable))]
         public bool IsTgtEmbeddingTrainable = true;
 
-        [Arg("Maxmium src sentence length in valid set", nameof(MaxValidSrcSentLength))]
+        [Arg("Maximum src sentence length in valid set", nameof(MaxValidSrcSentLength))]
         [Range(1, 1280000)]
         public int MaxValidSrcSentLength = 32;
 
-        [Arg("Maxmium tgt sentence length in valid set", nameof(MaxValidTgtSentLength))]
+        [Arg("Maximum tgt sentence length in valid set", nameof(MaxValidTgtSentLength))]
         [Range(1, 1280000)]
         public int MaxValidTgtSentLength = 32;
 
-        [Arg("Maxmium src sentence length in training and test set", nameof(MaxSrcSentLength))]
+        [Arg("Maximum src sentence length in training and test set", nameof(MaxSrcSentLength))]
         [Range(1, 1280000)]
         public int MaxSrcSentLength = 110;
 
-        [Arg("Maxmium tgt sentence length in training and test set", nameof(MaxTgtSentLength))]
+        [Arg("Maximum tgt sentence length in training and test set", nameof(MaxTgtSentLength))]
         [Range(1, 1280000)]
         public int MaxTgtSentLength = 110;
 

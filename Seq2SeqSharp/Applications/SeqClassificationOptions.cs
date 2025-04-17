@@ -19,7 +19,7 @@ namespace Seq2SeqSharp.Applications
         [Arg("It indicates if the embedding is trainable", nameof(IsEmbeddingTrainable))]
         public bool IsEmbeddingTrainable = true;
 
-        [Arg("Maxmium sentence length", nameof(MaxSentLength))]
+        [Arg("Maximum sentence length", nameof(MaxSentLength))]
         [Range(1, 1280000)]
         public int MaxSentLength = 110;
 
